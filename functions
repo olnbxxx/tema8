@@ -1,0 +1,5 @@
+function verdada(){
+    return true;
+}
+console.log(verdada());
+
