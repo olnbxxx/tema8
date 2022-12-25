@@ -3,3 +3,7 @@ function verdada(){
 }
 console.log(verdada());
 
+function saludo (){
+    console.log("Hola soy una promesa");
+}
+setTimeout(saludo, 5000);
