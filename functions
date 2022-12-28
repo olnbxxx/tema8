@@ -7,3 +7,21 @@ function saludo (){
     console.log("Hola soy una promesa");
 }
 setTimeout(saludo, 5000);
+
+function* generaId(){
+    let id = 0;
+    while(true){
+        id += 2;
+        console.log(id);
+        if (id === 10){
+            return id;
+        }
+        yield id;
+    }
+}
+
+const gen = generaId();
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
+console.log(gen.next());
